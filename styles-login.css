@@ -2,11 +2,16 @@ body {
     background-color: orangered;
 }
 
+navbar{
+    background-color: orangered;
+}
 
-.navbar-header a{
-    color: white;
+navbar-header a{
     float: left;
     text-decoration: none;
+}
+container,nav, navbar-fixed-top, navbar-inverse{
+     background-color: orangered;
 }
 /*
 
