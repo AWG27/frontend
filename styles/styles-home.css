@@ -1,0 +1,73 @@
+
+
+header{
+    min-height: 100px;
+
+}
+
+.container{
+    width: 100%;
+    background: orangered;
+
+}
+
+.row{
+    margin-left: 8%;
+}
+.navbar-header{
+    float: left;
+    margin-top: -5px;
+    min-height: 100px;
+}
+.navbar-fixed-top{
+    min-height: 100px;
+
+}
+
+.navbar-header a{
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    float: right;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    border: 1px solid white;
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+ul li a:hover{
+    background: white;
+    color: orangered;
+}
+
+.input-group{
+    margin: 8px 2px;
+    border: 1px solid orangered;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.input-group button{
+    color: black;
+    background: orangered;
+}
+
+.pelicula{
+    color: black;
+}
+
+

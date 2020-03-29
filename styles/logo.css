@@ -2,12 +2,7 @@ img{
     height: 50px;
     width: 60px;
 }
-.navbar-default{
-    height: 100px;
-    background-color: orangered;
-    color: orangered;
-    background-image: unset;
-    border: none;
-    border-radius: unset;
+.icons{
+     height: unset;
+    width: unset;
 }
-

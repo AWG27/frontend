@@ -1,0 +1,31 @@
+
+[
+  {
+    "usuario": "asudara",
+    "email": "asudara@example.com"
+  },
+  {
+    "usuario": "xhuang",
+    "email": "xhuang@example.com"
+  },
+  {
+    "usuario": "user3",
+    "email": "user3@example.com"
+  },
+  {
+    "usuario": "user4",
+    "email": "user4@example.com"
+  },
+  {
+    "usuario": "user5",
+    "email": "user5@example.com"
+  },
+  {
+    "usuario": "user6",
+    "email": "user6@example.com"
+  },
+  {
+    "usuario": "user7",
+    "email": "user7@example.com"
+  }
+]
