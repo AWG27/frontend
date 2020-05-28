@@ -1,20 +1,27 @@
-body{
-    border: 5px solid orangered;
-}
+
 
 header{
-    height: 10vh;
+    min-height: 100px;
 
 }
 
 .container{
     width: 100%;
     background: orangered;
+
 }
 
+.row{
+    margin-left: 8%;
+}
 .navbar-header{
     float: left;
     margin-top: -5px;
+    min-height: 100px;
+}
+.navbar-fixed-top{
+    min-height: 100px;
+
 }
 
 .navbar-header a{

@@ -1,10 +1,10 @@
 body {
-    background-color: orangered;
+    background-color: white;
 }
 
 
 .navbar-header a{
-    color: white;
+    color: orangered;
     float: left;
     text-decoration: none;
 }
@@ -18,7 +18,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: orangered;
 }
 
 
@@ -64,13 +64,13 @@ body {
     width: 100%;
     background: none;
     border: 1px solid;
-    color: white;
+    color: orangered;
     margin: 12px 0;
 }
 
 .btn:hover{
-    background: white;
-    color: orangered;
+    background: orangered;
+    color: white;
 }
 
 @media (max-width: 480px) {

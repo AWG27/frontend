@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "pelicula": {
+      "nombre": "Titanic",
+      "img": "images/titanic.jpg"
+    }
+  },
+  {
+    "id": 1,
+    "pelicula": {
+      "nombre": "Frozen",
+      "img": "images/frozen.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "pelicula": {
+      "nombre": "Star Wars",
+      "img": "images/starwars.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "pelicula": {
+      "nombre": "Sonic",
+      "img": "images/sonic.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "pelicula": {
+      "nombre": "Hunger Game",
+      "img": "images/hungergame.jpg"
+    }
+  }
+]
