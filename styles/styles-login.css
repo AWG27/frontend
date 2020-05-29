@@ -1,16 +1,21 @@
 body {
-    background-color: white;
+    /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/fondo.png");*/
+    background-size: cover;
+    background-position: center;
 }
 
-
-.navbar-header a{
-    color: orangered;
-    float: left;
-    text-decoration: none;
-}
 /*
 
 */
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+}
+
 
 .login-box{
     width: 270px;
@@ -23,8 +28,7 @@ body {
 
 
 .login-box h1{
-    float: center;
-    font-size: 40px;
+    font-size: 24px;
     border-bottom: 3px solid;
     margin-bottom: 50px;
     padding: 13px 0;
@@ -45,19 +49,19 @@ body {
     background: none;
 }
 
+
+/*
 .textregister{
     border: none;
 }
-
 .textregister p{
     float: left;
 }
-
 .textregister a{
     float: right;
     color: mediumblue;
-
 }
+*/
 
 
 .btn{
@@ -73,11 +77,14 @@ body {
     color: white;
 }
 
+/*
 @media (max-width: 480px) {
     form{
         width: 95%;
     }
 }
+
+ */
 
 
 

@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Video Club - Home</title>
+    <!-- bootstrap  -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
-
     <!-- ajax  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="scripts/home.js"></script>
-
-
-
+    <!-- style  -->
     <link href="styles/styles-home.css" rel="stylesheet">
     <link href="styles/logo.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="container navbar-fixed-top">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img alt="Brand" class="logo" src="images/logo-video-club27-trans.png">
-            </a>
-        </div>
-        <ul>
-            <li><a href="#">USUARIO</a></li>
-        </ul>
-    </div>
-</header>
-<div class="pelicula">
+
+
+<!------------------------------------------------------------------------>
+
+
+<!-- mantiene en top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!-- logo en parte izquierdo -->
+    <img alt="Brand" class="logo" src="images/logo-video-club27-trans.png">
+    <!-- barra de busqueda en el centro -->
     <form>
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search">
@@ -40,6 +35,24 @@
             </div>
         </div>
     </form>
+    <!-- boton usuario en la parte derecha-->
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">USUARIO
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item-1" href="administrator.html">Editar</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item-2" href="index.html">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!------------------------------------------------------------------------>
+
+<div class="pelicula">
+
     <div id="contenido">
         <div class="row" id="fila_1">
             <div class="col-md-4">
@@ -50,7 +63,6 @@
                 <p>Valoración :</p>
                 <p><a class="btn" href="#" role="button">Ver película &raquo;</a></p>
             </div>
-
         </div>
         <div class="row" id="fila_2">
             <div class="col-md-4">
@@ -62,7 +74,18 @@
                 <p><a class="btn" href="#" role="button">Ver película &raquo;</a></p>
             </div>
         </div>
+        <div class="row" id="fila_3">
+            <div class="col-md-4">
+                <h2>Película 1</h2>
+                <p>La película 1 es ....</p>
+                <p>Año : </p>
+                <p>Director : </p>
+                <p>Valoración :</p>
+                <p><a class="btn" href="#" role="button">Ver película &raquo;</a></p>
+            </div>
+        </div>
     </div>
 
+</div>
 </body>
 </html>

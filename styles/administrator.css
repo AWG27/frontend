@@ -4,15 +4,19 @@ body{
     padding: 0;
     border: 0;
 }
+
+nav div{
+    float: left;
+    margin-top: -10px;
+}
 nav ul {
     float: right;
-    margin-top: 25px;
-    padding: 5px 20px;
+    margin-top: 10px;
 }
 
 nav ul li{
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav ul li a{
@@ -54,7 +58,12 @@ nav ul li a:hover{
     left: unset;
     margin-right: 5px;
     box-shadow: unset;
+    background: orangered;
 }
+.dropdown-menu li a{
+    border: none;
+}
+
 .dropdown-menu li {
     display: list-item;
 }
