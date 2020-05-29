@@ -23,11 +23,11 @@ $(document).ready(function () {
         "            </ul>";
 
 
-/*********************************************************************************************
-*********************************************************************************************
-VISTA PELICULAS
-*********************************************************************************************
-**********************************************************************************************/
+    /*********************************************************************************************
+     *********************************************************************************************
+     VISTA PELICULAS
+     *********************************************************************************************
+     **********************************************************************************************/
 
     $("#peliculas").click(function () {
         $("#boton-crear").replaceWith(
@@ -58,8 +58,6 @@ VISTA PELICULAS
             "</form>");
 
 
-
-
         var contenido_tabla = $("#contenido");
         contenido_tabla.replaceWith(contenido);
         contenido_tabla = $("#contenido");
@@ -69,13 +67,33 @@ VISTA PELICULAS
             $.each(data, function (key, val) {
                 //console.log( "key: "+key +", value:"+ val.usuario );
                 contenido_tabla.append(
-                    " <tr class=\"highlight\" id=\"video_"+key+"\">\
+                    " <tr class=\"highlight\" id=\"video_" + key + "\">\
                         <td>" + val.pelicula.nombre + "</td>\
                         <td>\
-                            <a class=\"btn boton\" id=\"boton-eliminar" + key + "\">eliminar</a> \
+                            <a class=\"btn boton-moficar\" id=\"boton-modificar" + key + "\" data-toggle=\"modal\" data-target=\"#modal-boton-modificar\">modificar</a>\
+                            \<a class=\"btn boton\" id=\"boton-eliminar" + key + "\">eliminar</a> \
                         </td>\
                     </tr>"
                 );
+                $("#boton-modificar" + key).click(function () {
+                    var modal_modificar = $("#titulo-modificar");
+                    modal_modificar.empty();
+                    modal_modificar.append("Modificar " + val.pelicula.nombre)
+                    var modal_cuerpo_modificar = $("#modal-cuerpo-modificar");
+                    modal_cuerpo_modificar.empty();
+                    modal_cuerpo_modificar.append(
+                        "<form>\n" +
+                        "  <div class=\"form-group\">\n" +
+                        "    <label>Nombre de la pelicula</label>\n" +
+                        "    <input type=\"text\" class=\"form-control\" id=\"nombre_pelicula\" placeholder=\"" + val.pelicula.nombre + "\">\n" +
+                        "  </div>\n" +
+                        "  <div class=\"form-group\">\n" +
+                        "    <label>Url del contenido</label>\n" +
+                        "    <input type=\"text\" class=\"form-control\" id=\"nombre_pelicula\" placeholder=\"" + val.pelicula.nombre + "\">\n" +
+                        "  </div>\n" +
+                        " <button type=\"submit\" class=\"btn\" data-dismiss=\"modal\" id=\"guardar_peli\">Modificar</button>\n" +
+                        "</form>")
+                });
                 $("#boton-eliminar" + key).click(function () {
                     alert("¿ Esta seguro de eliminar \"" + val.pelicula.nombre + "\" ?");
                     $("#video_" + key).remove();
@@ -88,13 +106,11 @@ VISTA PELICULAS
     });
 
 
-
-
-/*********************************************************************************************
-*********************************************************************************************
-        VISTA USUARIOS
-*********************************************************************************************
-*********************************************************************************************/
+    /*********************************************************************************************
+     *********************************************************************************************
+     VISTA USUARIOS
+     *********************************************************************************************
+     *********************************************************************************************/
 
     $("#usuarios").click(function () {
 
@@ -129,7 +145,7 @@ VISTA PELICULAS
                 contador_usuario = key;
                 //console.log( "key: "+key +", value:"+ val.usuario );
                 contenido_tabla.append(
-                    " <tr class=\"highlight\" id=\"usuario_"+key+"\">\
+                    " <tr class=\"highlight\" id=\"usuario_" + key + "\">\
                         <td>" + val.usuario + "</td>\
                         <td>\
                             <a class=\"btn boton-moficar\" id=\"boton-modificar" + key + "\" data-toggle=\"modal\" data-target=\"#modal-boton-modificar\">modificar</a>\
@@ -170,7 +186,7 @@ VISTA PELICULAS
                 });
 
                 // limita el numero de usuarios mostrados
-                return key<5;
+                return key < 5;
             })
 
         });
@@ -208,9 +224,9 @@ VISTA PELICULAS
                     .before(
                         "<li class=\"page-item\"><a class=\"page-link\" id=\"numero_pag_" + i + "\"  href=\"#\">" + i + "</a></li>"
                     );
-                $("#numero_pag_"+i).click(function () {
+                $("#numero_pag_" + i).click(function () {
 
-                        $("#usuarios").click();
+                    $("#usuarios").click();
                 })
             }
         });
