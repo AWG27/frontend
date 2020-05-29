@@ -2,30 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Video Club - Home</title>
-    <!-- bootstrap  -->
+    <title>Video Club - Admin</title>
+    <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- ajax  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="scripts/home.js"></script>
-    <!-- style  -->
+    <!-- estilos propios-->
     <link href="styles/styles-home.css" rel="stylesheet">
     <link href="styles/logo.css" rel="stylesheet">
+    <script src="scripts/administrator.js"></script>
 </head>
+
+
 <body>
 
-
-<!------------------------------------------------------------------------>
-
-
-<!-- mantiene en top -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <!-- logo en parte izquierdo -->
+<nav class="navbar navbar-default">
     <a class="logo" href="page-home.html">
-        <img alt="Brand" class="logo" src="images/logo-video-club27-trans.png">
-    </a>
+    <img alt="Brand" class="logo" src="images/logo-video-club27-trans.png">
+        </a>
     <!-- barra de busqueda en el centro -->
     <form>
         <div class="input-group">
@@ -50,11 +46,25 @@
     </div>
 </nav>
 
+<h1><strong>Titanic</strong></h1>
 
-<!------------------------------------------------------------------------>
+<div class="row">
+    <iframe class="col-md-7" width="100%" height="450" src="https://www.youtube.com/embed/3gK_2XdjOdY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-<div class="pelicula">
-    <div id="contenido"></div>
+    <div class="detalle col-md-5">
+        <p><strong>Un buscador de tesoros en barcos undidos, inicia la exploración submarina más apasionante de su vida en los restos del mítico Titanic.
+            El hallazgo del dibujo de una joven, milagrosamente conservado, le conduce a una anciana centenaria que afirma ser la retratada.
+            Comienza el relato de un recuerdo maravilloso, un amor de juventud no compartido con nadie,
+            que tuvo como marco el malhadado barco que en 1912 se llevó al fondo del mar 1 500 personas.</strong></p><br>
+        <p><strong>Año: 1997</strong></p><br>
+        <p><strong>Director: James Cameron</strong></p><br>
+        <p><strong>Valoración: 9</strong></p><br>
+    </div>
+
 </div>
+
+
 </body>
 </html>

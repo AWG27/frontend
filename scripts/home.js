@@ -17,14 +17,14 @@ $(document).ready(function () {
             peli.append("<div class=\"col-md-4\" id=\"peli_data_"+key+"\"></div>");
 
             peli = $("#peli_img_"+key);
-            peli.append("<img class=\"icons\" src='"+val.pelicula.img+"'>");
+            peli.append("<a class=\"logo\" href=\"page-peli.html\"><img class=\"icons\" src='"+val.pelicula.img+"'></a>");
             peli =  $("#peli_data_"+key);
             peli.append("<h2>"+val.pelicula.nombre+"</h2>");
             peli.append("<p>La película "+val.id+" es ....</p>");
             peli.append("<p>Año : </p>");
             peli.append("<p>Director : </p>");
             peli.append("<p>Valoración :</p>");
-            peli.append("<p><a class=\"btn\" href=\"#\" role=\"button\">Ver película &raquo;</a></p> </div>");
+            //peli.append("<p><a class=\"btn\" href=\"page-peli.html\" role=\"button\">Ver película &raquo;</a></p> </div>");
         });
     });
 });
